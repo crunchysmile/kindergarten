@@ -1,445 +1,789 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.blank {
+  width: 100%;
+  height: 50vh;
+  background-color: red;
 }
-.navbar-brand{
-    font-family: 'Patrick Hand', cursive;
-    font-size:2.5rem;
-    font-weight: bold;
-    margin-left: 3%;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.kin{
-    color: blue;
+.navbar-brand {
+  font-family: "Patrick Hand", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 3%;
 }
-.der{
-    color:crimson;
+.kin {
+  color: blue;
 }
-.gar{
-    color: rgb(84, 245, 9);
+.der {
+  color: crimson;
 }
-.ten{
-    color:rgb(246, 109, 17);
+.gar {
+  color: rgb(84, 245, 9);
 }
-.btn{
-    
-    padding:5px 5px;
+.ten {
+  color: rgb(246, 109, 17);
 }
-.collaps{
-    margin-right: 2vw;
+.btn {
+  padding: 5px 5px;
 }
-.nav-item{
-    margin-right: 20px;
+.collaps {
+  margin-right: 2vw;
 }
-.d-flex{
-    margin-right: 5%;
+.nav-item {
+  margin-right: 20px;
+}
+.d-flex {
+  margin-right: 5%;
 }
 /* title banner */
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: url("images/study.jpg");
-    background-repeat: no-repeat;
-    background-position:right;
-    background-size: cover;
-    display: flex;
-   justify-content: center;
-   align-items: center;
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/study.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.title{
-   width: 80%;
-   height: 70%;
-  
-   margin-bottom: 50px;
-   
+.title {
+  width: 80%;
+  height: 70%;
+  margin-bottom: 50px;
 }
-.description{
-    width:60%;
-    height: 100%;
-    
-    border-radius: 50px;
-    padding:20px 20px 0 20px;
-    border:5px solid blueviolet;
-}
-.every-child{
-    font-family: 'Patrick Hand', cursive;
-}
-.title-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+.description {
+  width: 60%;
+  height: 100%;
 
+  border-radius: 50px;
+  padding: 20px 20px 0 20px;
+  border: 5px solid blueviolet;
+}
+.every-child {
+  font-family: "Patrick Hand", cursive;
+}
+.title-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 /* welcome section */
-     .welcome{
-         width: 100%;
-         height: 150vh;
-         background-color: #F7F2F6;
-         
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-     .wlcm-container{
-         width: 80%;
-         height:100%;
-     }
-     .wlcm-head{
-         text-align: center;
-         font-size: 27px;
-     }
-     .wlcm-description{
-         text-align: center;
-         font-size:18px;
-     }
-     .wlcm-feature-desc{
-         width: 100%;
-         height: 30%;
-     }
+.welcome {
+  width: 100%;
+  height: 150vh;
+  background-color: #f7f2f6;
 
-
-
-     /* media queries */
-     /* laptop mode *//* laptop mode *//* laptop mode *//* laptop mode *//* laptop mode *//* laptop mode */
-@media only screen and (max-width:1500px){
-    .description{
-        width:50%;
-        height:80%;
-        background-color: rgb(246, 246, 246);
-        border-radius: 30px;
-        padding:50px 50px 0 50px;
-    }
-    span.every-child{
-        display: block;
-        font-family: 'Patrick Hand', cursive;
-        font-size: 45px;
-        color: #fbce0f;
-        font-weight: 600;
-        margin-bottom: 30px;
-    }
-    .description h1{
-        font-size:40px;
-        color: #423f8d;
-        font-family: 'Patrick Hand', cursive;
-        font-weight: 800;
-    }
-    .explore{
-        text-decoration: none;
-        color:#fff;
-        background-color: #ed078b;
-        padding: 12px;
-        border-radius: 35px;
-        font-family: concert one,cursive;
-    }
-    
-    .welcome{
-        width: 100%;
-        height: 115vh;
-        background-color: #F7F2F6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .wlcm-container{
-        width: 90%;
-        height:100%;
-        padding-top: 5%;
-    }
-    .wlcm-head{
-        font-family: fredoka one,cursive;
-        font-size: 42px;
-        font-weight: 800;
-        line-height: 1.2;
-        margin-bottom: 15px;
-        color: rgb(49, 78, 110) ;
-        display: block;
-    }
-    .wlcm-head span{
-        font-family: fredoka one,cursive;
-        font-size: 42px;
-        display: inline-block;
-        color: rgb(204, 38, 67);
-    }
-    .wlcm-feature{
-        margin-top:05%;
-        width:100%;
-        height:55%;
-        display: flex;
-        flex-direction:row;
-        justify-content: space-around;
-    }
-    
-    .wlcm-container p{
-        font-family: dm sans,sans-serif;
-        margin-left: 2%;
-            margin-right: 2%;
-    }
-    .wlcm-feature-desc{
-      width: 45%;
-      height:100%;
-    }
-    .fetr{
-        width: 100%;
-        height: 90%;
-        display: grid;
-        grid-template-columns: 28% 70%;
-        grid-column-gap:4px;
-        grid-template-rows: 100%;
-    }
-    .fetr-icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fetr-menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .wlcm-feature-img{
-        width: 45%;
-        height:100%;
-        background-image: url("images/children-studying.jpg");
-        background-position:0%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 30px;
-    }
-         /* feature section descriptions */
-         .wlcm-feature-desc{
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
- 
-         }
-         .fetr{
-             width: 100%;
-             height: 90%;
-         }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wlcm-container {
+  width: 80%;
+  height: 100%;
+}
+.wlcm-head {
+  text-align: center;
+  font-size: 27px;
+}
+.wlcm-description {
+  text-align: center;
+  font-size: 18px;
+}
+.wlcm-feature-desc {
+  width: 100%;
+  height: 30%;
 }
 
-    /* tablet mode *//* tablet mode *//* tablet mode *//* tablet mode *//* tablet mode */                  /* tablet mode */
-  @media only screen and (max-width:1050px){
-    .description{
-        width:70%;
-        height: 100%;
-        background-color: rgb(246, 246, 246);
-        border-radius: 30px;
-    }
-    span.every-child{
-        display: block;
-        font-family: 'Patrick Hand', cursive;
-        font-size: 38px;
-        color: #fbce0f;
-        margin-bottom: 30px;
-    }
-    .description h1{
-        font-size: 58px;
-        color: #423f8d;
-        font-family: 'Patrick Hand', cursive;
-    }
-    .explore{
-        text-decoration: none;
-        color:#fff;
-        background-color: #ed078b;
-        padding: 12px;
-        border-radius: 35px;
-        font-family: concert one,cursive;
-    }
-    .welcome{
-        width: 100%;
-        height: 150vh;
-        background-color: #F7F2F6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       }
-       .wlcm-container{
-        height: 100%;
-    }
-    .wlcm-head{
-        font-family: fredoka one,cursive;
-        font-size: 42px;
-        font-weight: 800;
-        line-height: 1.2;
-        margin-bottom: 15px;
-        color: rgb(49, 78, 110) ;
-        display: block;
-    }
-    .wlcm-head span{
-        font-family: fredoka one,cursive;
-        font-size: 42px;
-        display: inline-block;
-        color: rgb(204, 38, 67);
-    }
-    .wlcm-feature{
-        margin-top: 10%;
-        width:100%;
-        height:75%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .wlcm-container p{
-        font-family: dm sans,sans-serif;
-        margin-left: 2%;
-            margin-right: 2%;
-    }
-    .wlcm-feature-desc{
-      width: 80%;
-      height:45%;
-    }
-    .wlcm-feature-img{
-        width: 80%;
-        height:35%;
-        background-image: url("images/children-studying.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-         /* feature section descriptions */
-         .wlcm-feature-desc{
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
- 
-         }
-         .fetr{
-             width: 100%;
-             height: 90%;
-             display: grid;
-             grid-template-columns: 28% 70%;
-             grid-column-gap:4px;
-             grid-template-rows: 100%;
-         }
-         .fetr-icon{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .fetr-menu{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-}  
+/* media queries */
+/* laptop mode */ /* laptop mode */ /* laptop mode */ /* laptop mode */ /* laptop mode */ /* laptop mode */
+@media only screen and (max-width: 1500px) {
+  .description {
+    width: 50%;
+    height: 80%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 30px;
+    padding: 50px 50px 0 50px;
+  }
+  span.every-child {
+    display: block;
+    font-family: "Patrick Hand", cursive;
+    font-size: 45px;
+    color: #fbce0f;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .description h1 {
+    font-size: 40px;
+    color: #423f8d;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 800;
+  }
+  .explore {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ed078b;
+    padding: 12px;
+    border-radius: 35px;
+    font-family: concert one, cursive;
+  }
 
-    /* mobile phone mode *//* mobile phone mode *//* mobile phone mode *//* mobile phone mode *//* mobile phone mode */
-    @media only screen and (max-width: 500px){
-        .navbar{
-            width: 100%;
-            position: fixed;
-        }
-        .title{
-            margin-bottom: 30px;
-            width: 80%;
-            height: 60%;
-         }
-         .description{
-            width:100%;
-            height:90%;
-            background-color: rgb(246, 246, 246);
-            border-radius: 30px;
-        }
-        span.every-child{
-            display: block;
-            font-family: 'Patrick Hand', cursive;
-            font-size:27px;
-            color: #fbce0f;
-            margin-bottom: 30px;
-        }
-        .description h1{
-            font-size: 48px;
-            color: #423f8d;
-            font-family: 'Patrick Hand', cursive;
-        }
-        .explore{
-            text-decoration: none;
-            color:#fff;
-            background-color: #ed078b;
-            padding: 10px;
-            border-radius: 30px;
-            font-family: concert one,cursive;
-        }
-         .welcome{
-         width: 100%;
-         height: 150vh;
-         background-color: #F7F2F6;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-        }
-        .wlcm-head{
-            font-family: fredoka one,cursive;
-            font-size: 37px;
-            font-weight: 400;
-            line-height: 1.2;
-            margin-bottom: 15px;
-            color: rgb(49, 78, 110) ;
-            display: block;
-        }
-        .wlcm-head span{
-            font-family: fredoka one,cursive;
-            font-size: 37px;
-            display: inline-block;
-            color: rgb(204, 38, 67);
-        }
-        .wlcm-feature{
-            margin-top: 10%;
-            width:100%;
-            height:75%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-        }
-        .wlcm-container{
-            height: 90%;
-            padding-top: 5%;
-        }
-        .wlcm-container p{
-            font-family: dm sans,sans-serif;
-            margin-left: 2%;
-            margin-right: 2%;
-        }
-        .wlcm-feature-desc{
-          width: 100%;
-          height:45%;
-          display: grid;
-           grid-template-rows: 1fr 1fr 1fr;
-        }
-        .wlcm-feature-img{
-            width: 100%;
-            height:30%;
-            background-image: url("images/children-studying.jpg");
-            background-position: center;
-            background-size: cover;
-            margin-top:0px;
-            text-indent: -100px;
-        }
-           /* feature section descriptions */
-        .wlcm-feature-desc{
-           display: grid;
-           grid-template-rows: 1fr 1fr 1fr;
-        }
-        .fetr{
-            width: 100%;
-            height: 90%;
-            display: grid;
-            grid-template-columns: 28% 70%;
-            grid-column-gap:4px;
-            grid-template-rows: 100%;
-        }
-        
-        .fetr img{
-            width: 80%;
-            height: 80%;
-        }
-        .fetr-icon{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-      }
-   
+  .welcome {
+    width: 100%;
+    height: 115vh;
+    background-color: #f7f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wlcm-container {
+    width: 90%;
+    height: 100%;
+    padding-top: 5%;
+  }
+  .wlcm-head {
+    font-family: fredoka one, cursive;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: rgb(49, 78, 110);
+    display: block;
+  }
+  .wlcm-head span {
+    font-family: fredoka one, cursive;
+    font-size: 42px;
+    display: inline-block;
+    color: rgb(204, 38, 67);
+  }
+  .wlcm-feature {
+    margin-top: 05%;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .wlcm-container p {
+    font-family: dm sans, sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .wlcm-feature-desc {
+    width: 45%;
+    height: 100%;
+  }
+  .fetr {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 28% 70%;
+    grid-column-gap: 4px;
+    grid-template-rows: 100%;
+  }
+  .fetr-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fetr-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wlcm-feature-img {
+    width: 45%;
+    height: 100%;
+    background-image: url("images/children-studying.jpg");
+    background-position: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+  }
+  /* feature section descriptions */
+  .wlcm-feature-desc {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .fetr {
+    width: 100%;
+    height: 90%;
+  }
+  /* classes offered section*/
+  .cllasses-offered {
+    width: 100%;
+    height:206vh;
+    display: flex;
+    justify-content: center;
+    margin-top:0;
+    margin-bottom: auto;
+  }
+  .cls-offer-container {
+    width: 40%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* main box-1 heading and para */
+  .cls-we-ofr {
+    width: 100%;
+    height: 25%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cls-we-ofr h2 {
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    color: #423f8d;
+  }
+
+  .cls-we-ofr p {
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+    color: #423f8d;
+  }
+  /* main box 2 sliders */
+  .cls-dtls-sliders {
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .sldr {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f2f6;
+  }
+  .sldr-desc-box {
+    width: 100%;
+    height: 54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sldr-desc-box hr {
+    width: 100%;
+    height: 2px;
+    color: #8b898b;
+  }
+  .sldr h2 {
+    margin-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+  .sldr p {
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+  .age-cls-tm {
+    width: 90%;
+    height: 55%;
+    display: flex;
+    flex: 2fr 1fr 2fr;
+    justify-content: center;
+  }
+  .age h2 {
+    color: rgb(144, 5, 28);
+  }
+  .nof-classes h2 {
+    color: blue;
+  }
+  .price h2 {
+    color: rgba(235, 235, 1, 0.89);
+  }
+  .more-cls {
+    width: 90%;
+    height: 10%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* more classes link */
+  .btn {
+    /* display: block; */
+    background-color: rgb(245, 80, 204);
+    width: 60%;
+    height: 60%;
+    border: none;
+    font-family: "Fredoka One",cursive;
+    font-size: 28px;
+  }
+  .d-block{
+    width: 100%;
+    height: 50%;
+  }
+
+}
+
+/* tablet mode */ /* tablet mode */ /* tablet mode */ /* tablet mode */ /* tablet mode */ /* tablet mode */
+@media only screen and (max-width: 1050px) {
+  .description {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 30px;
+  }
+  span.every-child {
+    display: block;
+    font-family: "Patrick Hand", cursive;
+    font-size: 38px;
+    color: #fbce0f;
+    margin-bottom: 30px;
+  }
+  .description h1 {
+    font-size: 58px;
+    color: #423f8d;
+    font-family: "Patrick Hand", cursive;
+  }
+  .explore {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ed078b;
+    padding: 12px;
+    border-radius: 35px;
+    font-family: concert one, cursive;
+  }
+  .title {
+    width: 80%;
+    height: 36%;
+    margin-bottom: 50px;
+  }
+  .welcome {
+    width: 100%;
+    height: 150vh;
+    background-color: #f7f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wlcm-container {
+    height: 100%;
+  }
+  .wlcm-head {
+    font-family: fredoka one, cursive;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: rgb(49, 78, 110);
+    display: block;
+  }
+  .wlcm-head span {
+    font-family: fredoka one, cursive;
+    font-size: 42px;
+    display: inline-block;
+    color: rgb(204, 38, 67);
+  }
+  .wlcm-feature {
+    margin-top: 10%;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .wlcm-container p {
+    font-family: dm sans, sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .wlcm-feature-desc {
+    width: 80%;
+    height: 45%;
+  }
+  .wlcm-feature-img {
+    width: 80%;
+    height: 35%;
+    background-image: url("images/children-studying.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  /* feature section descriptions */
+  .wlcm-feature-desc {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .fetr {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 28% 70%;
+    grid-column-gap: 4px;
+    grid-template-rows: 100%;
+  }
+  .fetr-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fetr-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* classes we offer section */
+  /* classes offered section*/
+  .cllasses-offered {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    margin-bottom: auto;
+  }
+  .cls-offer-container {
+    width: 70%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* main box-1 heading and para */
+  .cls-we-ofr {
+    width: 100%;
+    height: 25%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cls-we-ofr h2 {
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    color: #423f8d;
+  }
+
+  .cls-we-ofr p {
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+    color: #423f8d;
+  }
+  /* main box 2 sliders */
+  .cls-dtls-sliders {
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .sldr {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f2f6;
+  }
+  .sldr-desc-box {
+    width: 100%;
+    height: 54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sldr-desc-box hr {
+    width: 100%;
+    height: 2px;
+    color: #8b898b;
+  }
+  .sldr h2 {
+    margin-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+  .sldr p {
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+  .age-cls-tm {
+    width: 90%;
+    height: 55%;
+    display: flex;
+    flex: 2fr 1fr 2fr;
+    justify-content: center;
+  }
+  .age h2 {
+    color: rgb(144, 5, 28);
+  }
+  .nof-classes h2 {
+    color: blue;
+  }
+  .price h2 {
+    color: rgba(235, 235, 1, 0.89);
+  }
+  .more-cls {
+    width: 90%;
+    height: 10%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* more classes link */
+  .btn {
+    /* display: block; */
+    background-color: rgb(245, 80, 204);
+    width: 60%;
+    height: 60%;
+    border: none;
+    font-family: "Fredoka One",cursive;
+    font-size: 28px;
+  }
+
+}
+
+/* mobile phone mode */ /* mobile phone mode */ /* mobile phone mode */ /* mobile phone mode */ /* mobile phone mode */
+@media only screen and (max-width: 500px) {
+  .navbar {
+    width: 100%;
+    position: fixed;
+  }
+  .title {
+    margin-bottom: 30px;
+    width: 80%;
+    height: 60%;
+  }
+  .description {
+    width: 100%;
+    height: 90%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 30px;
+  }
+  span.every-child {
+    display: block;
+    font-family: "Patrick Hand", cursive;
+    font-size: 27px;
+    color: #fbce0f;
+    margin-bottom: 30px;
+  }
+  .description h1 {
+    font-size: 48px;
+    color: #423f8d;
+    font-family: "Patrick Hand", cursive;
+  }
+  .explore {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ed078b;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: concert one, cursive;
+  }
+  .welcome {
+    width: 100%;
+    height: 150vh;
+    background-color: #f7f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wlcm-head {
+    font-family: fredoka one, cursive;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: rgb(49, 78, 110);
+    display: block;
+  }
+  .wlcm-head span {
+    font-family: fredoka one, cursive;
+    font-size: 37px;
+    display: inline-block;
+    color: rgb(204, 38, 67);
+  }
+  .wlcm-feature {
+    margin-top: 10%;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .wlcm-container {
+    height: 90%;
+    padding-top: 5%;
+  }
+  .wlcm-container p {
+    font-family: dm sans, sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .wlcm-feature-desc {
+    width: 100%;
+    height: 45%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .wlcm-feature-img {
+    width: 100%;
+    height: 30%;
+    background-image: url("images/children-studying.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    text-indent: -100px;
+  }
+  /* feature section descriptions */
+  .wlcm-feature-desc {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .fetr {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 28% 70%;
+    grid-column-gap: 4px;
+    grid-template-rows: 100%;
+  }
+
+  .fetr img {
+    width: 80%;
+    height: 80%;
+  }
+  .fetr-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* classes offered section*/
+  .cllasses-offered {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    margin-bottom: auto;
+  }
+  .cls-offer-container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* main box-1 heading and para */
+  .cls-we-ofr {
+    width: 100%;
+    height: 25%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cls-we-ofr h2 {
+    font-family: "Fredoka One", cursive;
+    font-weight: 900;
+    color: #423f8d;
+  }
+
+  .cls-we-ofr p {
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+    color: #423f8d;
+  }
+  /* main box 2 sliders */
+  .cls-dtls-sliders {
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+    /* overflow: hidden; */
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .sldr {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f2f6;
+  }
+  .sldr-desc-box {
+    width: 100%;
+    height: 54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sldr-desc-box hr {
+    width: 100%;
+    height: 2px;
+    color: #8b898b;
+  }
+  .sldr h2 {
+    margin-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+  .sldr p {
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+  .age-cls-tm {
+    width: 90%;
+    height: 55%;
+    display: flex;
+    flex: 2fr 1fr 2fr;
+  }
+  .age h2 {
+    color: rgb(144, 5, 28);
+  }
+  .nof-classes h2 {
+    color: blue;
+  }
+  .price h2 {
+    color: rgba(235, 235, 1, 0.89);
+  }
+  .more-cls {
+    width: 90%;
+    height: 10%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* more classes link */
+  .btn {
+    /* display: block; */
+    background-color: rgb(245, 80, 204);
+    width: 60%;
+    height: 60%;
+    border: none;
+  }
+}
