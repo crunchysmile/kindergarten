@@ -14,7 +14,7 @@ var difference = ((countDate - today)/1000) ;
 
 
     // hours remaining 
-    var hours = Math.floor((difference % (86400)) / 3600 )
+    var hours = Math.floor((difference % (86400)) / 3600 ) ;
     //   console.log((hours));
 
     // minute remaining
@@ -31,3 +31,24 @@ var difference = ((countDate - today)/1000) ;
     document.getElementById("timer-number-secands").innerHTML = secands ;
 
 }, 1000);
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+var deviceWidth = screen.width ;
+
+if(deviceWidth >= 1040){
+        document.getElementById("expert-box").style.display = "none";
+        document.getElementById("ds-all-teacher").style.display = "block";
+     }
