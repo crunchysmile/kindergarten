@@ -100,7 +100,49 @@
   width: 100%;
   height: 30%;
 }
-
+.privacy-policy{
+  text-align: center;
+  background-color: rgb(235, 250, 24);
+}
+.auth-img{
+  width:40%;
+  margin-right: 3vw;
+  margin-bottom: 3vw;
+}
+.auth-img img{
+  max-width: 100%;
+}
+.author-main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4vw;
+  font-family: sans-serif;
+}
+@media screen and (min-width:600px) {
+  .author-main{
+      flex-direction: row;
+  }
+}
+     /*Sticky naviogation bar*/
+#nav-sticky{
+  position: sticky;
+  top:0;
+  z-index: 5;
+}
+    /* change background-color */
+    .navbar-fixed-top.scrolled {
+      background-color: rgba(227, 231, 18, 0.959) !important;
+      transition: background-color 200ms linear;
+    }
+    .nav-link.scrolled {
+       color:white;
+    }
+  /* contact- adress */
+  .contact-phone{
+    color:white
+  }
 /* media queries */
 /* laptop mode */ /* laptop mode */ /* laptop mode */ /* laptop mode */ /* laptop mode */ /* laptop mode */
 @media only screen and (max-width: 1500px) {
@@ -603,6 +645,7 @@
   .about-us-footer a:hover{
     color: rgba(87, 84, 84, 0.719);
   }
+
 }
 
 /* tablet mode */ /* tablet mode */ /* tablet mode */ /* tablet mode */ /* tablet mode */ /* tablet mode */
@@ -1244,33 +1287,14 @@
     .about-us-footer{
       padding-left: 20px;
     } */
-    .about-author{
-      width: 100%;
-      height: 50vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color:#1d1d22dc;
-    }
-    .about-author-main{
-      width: 60%;
-      height: 80%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      color: white;
-    }
-    .profile-image{
-      width: 30%;
-      height: 100%;
-      margin-right: 20px;
-    }
-    .profile-image img{
+    .autor img{
       display: block;
       width: 100%;
-      height: auto;
+      float: left;
+    }
+    .autor .author-desc{
+     width:100%;
+      float: left;
     }
 }
 
@@ -1865,34 +1889,16 @@
     font-size: 1.2rem;
     font-family: "Fredoka One", cursive;
   }
-  .about-author{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#1d1d22dc;
-  }
-  .about-author-main{
-    width: 60%;
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction:column;
-    color: white;
-  }
-  .profile-image{
-    width: 30%;
-    height: 100%;
-    margin-right: 20px;
-  }
-  .profile-image img{
+  .autor img{
     display: block;
     width: 100%;
-    height: auto;
+    float: left;
   }
+  .autor .author-desc{
+   width:100%;
+    float: left;
+  }
+
 }
 
 /* @media only screen  and (min-width: 1040px)  {
