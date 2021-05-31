@@ -17,11 +17,15 @@
   <link rel="stylesheet" href="style.css">
   <!-- font-awesome icons cdn link -->
   <link rel="stylesheet" href="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="nav-sticky" class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
     <div class="container-fluid">
       <!-- navbar brand -->
       <a class="navbar-brand" href="#">
@@ -38,23 +42,22 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Classes</a>
+            <a class="nav-link" href="#cllasses-offered">Classes</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link  href=" #">
+            <a class="nav-link"  href="#about-us">
               About
             </a>
-
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">Blog</a>
+            <a onclick="blog_notavl()" class="nav-link " href="">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">contact</a>
+            <a class="nav-link " href="#footer">contact</a>
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn  btn-primary" type="submit">Enroll Now</button>
+          <button onclick="enroll_closed()" class="btn  btn-primary" type="submit">Enroll Now</button>
         </form>
       </div>
     </div>
@@ -71,7 +74,7 @@
 
         <span class="every-child">For Every Children</span>
 
-        <a class="explore" href="#">Explore classes</a>
+        <a onclick="not_true()" class="explore" href="#">Explore classes</a>
       </div>
     </div>
   </div>
@@ -80,12 +83,12 @@
   <section class="welcome wlcm">
     <!-- main container -->
 
-    <div class="wlcm-container">
+    <div id="about-us" class="wlcm-container">
       <h1 class="wlcm-head">Welcome to our <span class="wlcm-kind">Kindergarten</span> </h1>
       <p class="wlcm-description">
         We are happy to see you here. Kindergarten is one of the best kid's school in Los Angelos.
         We hopefully teaching and training the kids with their best compatibility for their better 
-        future. We invite you to have a visit to our school. We suppose that wwe are the adding the 
+        future. We invite you to have a visit to our school. We suppose that we are the adding the 
         best value as far as we can to our younger generations.
       </p>
       <div class="wlcm-feature">
@@ -139,7 +142,7 @@
 
   <!--section-2 classes offered // section strats -->
 
-  <section class="cllasses-offered">
+  <section id="cllasses-offered" class="cllasses-offered">
     <div class="cls-offer-container">
       <!-- main box-1 heading and paragraph-->
       <div class="cls-we-ofr">
@@ -147,7 +150,7 @@
         <p>
           We deliberately understand that how quality learning is important. Keeping that in 
           mind we enlarge the variety of classes ranging from art class to social science classes.
-          Our instructors has the capability to nourish the best ability in childrens.
+          Our instructors has the capability to nourish the best ability in children.
         </p>
       </div>
 
@@ -179,7 +182,7 @@
                 </div>
                 <!-- class price -->
                 <div class="price">
-                  <h2>10/h</h2>
+                  <h2>$10/h</h2>
                   <p>Class price</p>
                 </div>
               </div>
@@ -208,7 +211,7 @@
                 </div>
                 <!-- class price -->
                 <div class="price">
-                  <h2>10/h</h2>
+                  <h2>$10/h</h2>
                   <p>Class price</p>
                 </div>
               </div>
@@ -237,7 +240,7 @@
                 </div>
                 <!-- class price -->
                 <div class="price">
-                  <h2>10/h</h2>
+                  <h2>$10/h</h2>
                   <p>Class price</p>
                 </div>
               </div>
@@ -433,7 +436,7 @@
 
             </p>
             <div class="quote-giver">
-              Will Smith, Actor.
+              Steven Smith, Business man in Alska.
             </div>
           </div>
         </div>
@@ -444,7 +447,7 @@
   <!-- section-5 review or testimonials ends-->
 
   <!-- section-6 footer quick links starts -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="footer-main-box">
        
       <!-- box-1 about kindergarten -->
@@ -475,6 +478,11 @@
               LI
           </div>
         </div>
+        <div class="contact-phone">
+          Mobile:+1-90879373 ; <br>
+          Email:nocantactplease01@gmail.com;
+          City:Los Angelos, Alaska, USA; <br>
+        </div>
       </div>
 
       <!-- box-2 quick links -->
@@ -503,11 +511,12 @@
   <!-- privacy policy section starts -->
        <div class="privacy-policy">
          <div class="inner-privacy">
-            Copyright &copy;2021 All rights reserved | This website is made by <a class="author-name">Satyanarayan</a>
+            Copyright &copy;2021 All rights reserved | This website is made by <a class="author-name" style="text-decoration: none;color:rgb(236, 14, 14);">Satyanarayan</a>
          </div>
        </div>
   <!-- privacy policy section ends -->
- 
+  <!-- <h3 style = "text-align: center; background-color: #161618c9;margin-bottom: 0; color: orange;" >About author </h3>
+  
 
   <!--Bootstrap javascript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
