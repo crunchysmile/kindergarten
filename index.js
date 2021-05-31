@@ -52,3 +52,28 @@ if(deviceWidth >= 1040){
         document.getElementById("expert-box").style.display = "none";
         document.getElementById("ds-all-teacher").style.display = "block";
      }
+
+     $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        // for changing the color of nav links
+      });
+    });
+
+    function enroll_closed(){
+      window.alert(
+        "Enrollment is curently closed due to Covid-19 Pandemic"
+      )
+    }
+    function blog_notavl(){
+      window.alert(
+        "We are soryy! No blogs currently updated"
+      )
+    }
+
+    function not_true(){
+      window.alert("This website is only for practice. No such services are offered");
+    }
+
+  
